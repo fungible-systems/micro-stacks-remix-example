@@ -24,6 +24,7 @@ export default function App() {
           appIconUrl={'https://remix.run/remix-v1.jpg'}
           onPersistState={handleSetSession}
           onSignOut={handleDestroySession}
+          network={'testnet'}
         >
           <Outlet />
           <ScrollRestoration />
