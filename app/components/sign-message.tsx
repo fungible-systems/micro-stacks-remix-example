@@ -1,5 +1,6 @@
 import { useOpenSignMessage } from '@micro-stacks/react';
 import { useState } from 'react';
+import { CodeBlock } from '~/components/code-block';
 
 export const SignMessage = () => {
   const { openSignMessage, isRequestPending } = useOpenSignMessage();
@@ -7,18 +8,16 @@ export const SignMessage = () => {
   const [response, setResponse] = useState(null as any);
   return (
     <div>
-      {response && (
-        <>
-          <pre>
-            <code>{JSON.stringify(response, null, 2)}</code>
-          </pre>
-        </>
-      )}
+      <h4>Sign a message</h4>
+      {response && <CodeBlock code={response} />}
       <input
         onChange={e => setMessage(e.currentTarget.value)}
         placeholder="Enter a message to sign!"
       />
-      <button onClick={() => openSignMessage({ message, onFinish: setResponse })}>
+      <button
+        disabled={message === ''}
+        onClick={() => openSignMessage({ message, onFinish: setResponse })}
+      >
         {isRequestPending ? 'request pending...' : 'Sign message'}
       </button>
     </div>

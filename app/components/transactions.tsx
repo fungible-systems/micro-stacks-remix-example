@@ -1,20 +1,29 @@
 import { useNetwork, useOpenStxTokenTransfer } from '@micro-stacks/react';
+import { useState } from 'react';
+import { CodeBlock } from '~/components/code-block';
 
 const StxTokenTransferButton = () => {
   const { openStxTokenTransfer, isRequestPending } = useOpenStxTokenTransfer();
+  const [response, setResponse] = useState(null as any);
+  const [recipient, setRecipient] = useState('ST3TA5AJCJ2W58JV9VHAKD17DA739Y195QQHC8RSR');
 
   return (
-    <button
-      onClick={() =>
-        openStxTokenTransfer({
-          recipient: 'ST1X6M947Z7E58CNE0H8YJVJTVKS9VW0PHEG3NHN3',
-          amount: '1',
-          memo: 'ty',
-        })
-      }
-    >
-      {isRequestPending ? 'request pending...' : 'send 1 uSTX (testnet)'}
-    </button>
+    <>
+      {response && <CodeBlock code={response} />}
+      <input onChange={e => setRecipient(e.currentTarget.value)} placeholder="ST3T...8RSR" />
+      <button
+        onClick={() =>
+          openStxTokenTransfer({
+            recipient,
+            amount: '1',
+            memo: 'ty',
+            onFinish: setResponse,
+          })
+        }
+      >
+        {isRequestPending ? 'request pending...' : 'send 1 uSTX (testnet)'}
+      </button>
+    </>
   );
 };
 

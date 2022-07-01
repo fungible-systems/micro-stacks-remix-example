@@ -4,6 +4,7 @@ import { SignMessage } from '~/components/sign-message';
 import { Header } from '~/components/header';
 import { Transactions } from '~/components/transactions';
 import { useAuth } from '@micro-stacks/react';
+import { SignStructuredMessage } from '~/components/structured-message';
 
 export default function Index() {
   const { isSignedIn } = useAuth();
@@ -24,6 +25,7 @@ export default function Index() {
       {isSignedIn && (
         <>
           <SignMessage />
+          <SignStructuredMessage />
           <Transactions />
         </>
       )}

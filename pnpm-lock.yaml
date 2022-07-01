@@ -1,8 +1,8 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@micro-stacks/client': 1.0.0-beta.2
-  '@micro-stacks/react': 1.0.0-beta.4
+  '@micro-stacks/client': 1.0.0-beta.5
+  '@micro-stacks/react': 1.0.0-beta.8
   '@remix-run/dev': 1.6.3
   '@remix-run/eslint-config': 1.6.3
   '@remix-run/node': 1.6.3
@@ -14,19 +14,19 @@ specifiers:
   '@types/react-dom': 17.0.17
   '@vercel/node': 2.3.3
   eslint: 8.18.0
-  micro-stacks: 0.5.3
+  micro-stacks: 0.6.1
   react: ^17.0.2
   react-dom: ^17.0.2
   typescript: 4.7.4
 
 dependencies:
-  '@micro-stacks/client': 1.0.0-beta.2_react@17.0.2
-  '@micro-stacks/react': 1.0.0-beta.4_react-dom@17.0.2+react@17.0.2
+  '@micro-stacks/client': 1.0.0-beta.5_react@17.0.2
+  '@micro-stacks/react': 1.0.0-beta.8_react-dom@17.0.2+react@17.0.2
   '@remix-run/node': 1.6.3_react-dom@17.0.2+react@17.0.2
   '@remix-run/react': 1.6.3_react-dom@17.0.2+react@17.0.2
   '@remix-run/vercel': 1.6.3_3bc1d932bd5e90edf35ed992b5753bc4
   '@vercel/node': 2.3.3
-  micro-stacks: 0.5.3
+  micro-stacks: 0.6.1
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
 
@@ -1457,12 +1457,12 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
-  /@micro-stacks/client/1.0.0-beta.2_react@17.0.2:
-    resolution: {integrity: sha512-kxFfxl1OTHuRcwGeSdo/xrITNCvkF3KJJIkY7gjPvqLDfB9q9LHXq/hxdBa8S9Zk///qHK5nVG7I2yI7FkS9rw==}
+  /@micro-stacks/client/1.0.0-beta.5_react@17.0.2:
+    resolution: {integrity: sha512-tEsDtVjB/R6ADlPaUmZu1h7plK3gGZAGd45GUmxFz9e2u5pPewAzoOEtcEyBKDOMMJeZiN6PuE2GoXr6Nj/vpg==}
     engines: {node: '>=14'}
     dependencies:
       fast-deep-equal: 3.1.3
-      micro-stacks: 0.5.3
+      micro-stacks: 0.6.1
       tiny-invariant: 1.2.0
       zustand: 4.0.0-rc.1_react@17.0.2
     transitivePeerDependencies:
@@ -1472,15 +1472,15 @@ packages:
       - react
     dev: false
 
-  /@micro-stacks/react/1.0.0-beta.4_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-bZPk/MUFOtVMxfkOPdL/r4qHhLLYq6yvOEwKwaQ/prOQMSQcYrlzWU6ZWRfx8BLjb8dv/w9vhLX1bPJQ0vZ0Xw==}
+  /@micro-stacks/react/1.0.0-beta.8_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-on1vat4ZbYrTRo1SM2CkK3OLd9cKIE3KH2PLuPDf6QQe/CHcTJSSw9CE72N88VB3lw2kVqvI6s9S8chcqZezDA==}
     engines: {node: '>=12'}
     peerDependencies:
       react: '>=17.0.0'
       react-dom: '>=17.0.0'
     dependencies:
-      '@micro-stacks/client': 1.0.0-beta.2_react@17.0.2
-      micro-stacks: 0.5.3
+      '@micro-stacks/client': 1.0.0-beta.5_react@17.0.2
+      micro-stacks: 0.6.1
       react: 17.0.2
       react-async-hook: 4.0.0_react@17.0.2
       react-dom: 17.0.2_react@17.0.2
@@ -5445,8 +5445,8 @@ packages:
     engines: {node: '>= 0.6'}
     dev: true
 
-  /micro-stacks/0.5.3:
-    resolution: {integrity: sha512-dDXROJgXCOzeNnnCs7Nu6UcwyEgg/xV8DK/ENzm5TwIqirWyGarDhtVSJPK/NknGgCbQSg+OxNUqfexQQvNigg==}
+  /micro-stacks/0.6.1:
+    resolution: {integrity: sha512-5VzDJOQRrgdHrc0CwFew6k1tQMZ4c7nn7yxiyK3BVX2Hqw9alulwANTt6tzS7U/WBFR0qz6ta9E0Ti+z9T4zpg==}
     engines: {node: '>=12'}
     peerDependencies:
       '@scure/bip32': 1.0.1
