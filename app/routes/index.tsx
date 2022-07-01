@@ -3,8 +3,10 @@ import { UserCard } from '~/components/user-card';
 import { SignMessage } from '~/components/sign-message';
 import { Header } from '~/components/header';
 import { Transactions } from '~/components/transactions';
+import { useAuth } from '@micro-stacks/react';
 
 export default function Index() {
+  const { isSignedIn } = useAuth();
   return (
     <div
       style={{
@@ -19,8 +21,12 @@ export default function Index() {
       <h1>Welcome to Remix</h1>
       <WalletConnectButton />
       <UserCard />
-      <SignMessage />
-      <Transactions />
+      {isSignedIn && (
+        <>
+          <SignMessage />
+          <Transactions />
+        </>
+      )}
     </div>
   );
 }
