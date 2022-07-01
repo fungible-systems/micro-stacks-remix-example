@@ -19,7 +19,7 @@ export const SignMessage = () => {
         placeholder="Enter a message to sign!"
       />
       <button onClick={() => openSignMessage({ message, onFinish: setResponse })}>
-        Sign message
+        {isRequestPending ? 'request pending...' : 'Sign message'}
       </button>
     </div>
   );

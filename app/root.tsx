@@ -3,6 +3,7 @@ import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from '@re
 
 import * as MicroStacks from '@micro-stacks/react';
 import { useSessionCallbacks } from '~/common/use-session-callbacks';
+import { Header } from '~/components/header';
 
 export const meta: MetaFunction = () => ({
   charset: 'utf-8',

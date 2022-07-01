@@ -3,21 +3,21 @@ lockfileVersion: 5.3
 specifiers:
   '@micro-stacks/client': 1.0.0-beta.2
   '@micro-stacks/react': 1.0.0-beta.4
-  '@remix-run/dev': ^1.5.1
-  '@remix-run/eslint-config': ^1.5.1
-  '@remix-run/node': ^1.5.1
-  '@remix-run/react': ^1.5.1
-  '@remix-run/serve': ^1.5.1
-  '@remix-run/vercel': ^1.5.1
+  '@remix-run/dev': 1.6.3
+  '@remix-run/eslint-config': 1.6.3
+  '@remix-run/node': 1.6.3
+  '@remix-run/react': 1.6.3
+  '@remix-run/serve': 1.6.3
+  '@remix-run/vercel': 1.6.3
   '@stacks/prettier-config': 0.0.10
-  '@types/react': ^17.0.45
-  '@types/react-dom': ^17.0.17
-  '@vercel/node': ^2.0.0
-  eslint: ^8.15.0
+  '@types/react': 17.0.45
+  '@types/react-dom': 17.0.17
+  '@vercel/node': 2.3.3
+  eslint: 8.18.0
   micro-stacks: 0.5.3
   react: ^17.0.2
   react-dom: ^17.0.2
-  typescript: ^4.6.4
+  typescript: 4.7.4
 
 dependencies:
   '@micro-stacks/client': 1.0.0-beta.2_react@17.0.2
@@ -35,7 +35,7 @@ devDependencies:
   '@remix-run/eslint-config': 1.6.3_9b649cb59581ba88f5ce651dd550d15a
   '@remix-run/serve': 1.6.3_react-dom@17.0.2+react@17.0.2
   '@stacks/prettier-config': 0.0.10
-  '@types/react': 17.0.47
+  '@types/react': 17.0.45
   '@types/react-dom': 17.0.17
   eslint: 8.18.0
   typescript: 4.7.4
@@ -1919,6 +1919,14 @@ packages:
     resolution: {integrity: sha512-VjnqEmqGnasQKV0CWLevqMTXBYG9GbwuE6x3VetERLh0cq2LTptFE73MrQi2S7GkKXCf2GgwItB/melLnxfnsg==}
     dependencies:
       '@types/react': 17.0.47
+    dev: true
+
+  /@types/react/17.0.45:
+    resolution: {integrity: sha512-YfhQ22Lah2e3CHPsb93tRwIGNiSwkuz1/blk4e6QrWS0jQzCSNbGLtOEYhPg02W0yGTTmpajp7dCTbBAMN3qsg==}
+    dependencies:
+      '@types/prop-types': 15.7.5
+      '@types/scheduler': 0.16.2
+      csstype: 3.1.0
     dev: true
 
   /@types/react/17.0.47:
@@ -5875,7 +5883,7 @@ packages:
     engines: {node: '>=10'}
 
   /ms/2.0.0:
-    resolution: {integrity: sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g=}
+    resolution: {integrity: sha512-Tpp60P6IUJDTuOq/5Z8cdskzJujfwqfOTkrwIwj7IRISpnkJnT6SyJ4PCPnGMoFjC9ddhal5KVIYtAt97ix05A==}
     dev: true
 
   /ms/2.1.2:
@@ -7574,7 +7582,7 @@ packages:
     dev: true
 
   /unpipe/1.0.0:
-    resolution: {integrity: sha1-sr9O6FFKrmFltIF4KdIbLvSZBOw=}
+    resolution: {integrity: sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ==}
     engines: {node: '>= 0.8'}
     dev: true
 
