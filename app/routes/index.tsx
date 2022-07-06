@@ -5,6 +5,8 @@ import { Header } from '~/components/header';
 import { Transactions } from '~/components/transactions';
 import { useAuth } from '@micro-stacks/react';
 import { SignStructuredMessage } from '~/components/structured-message';
+import { Gaia } from '~/components/gaia';
+import { ContractDeploy, FailingBNSFunction, FakerTx, StellaTokens } from '~/components/debugger';
 
 export default function Index() {
   const { isSignedIn } = useAuth();
@@ -27,6 +29,11 @@ export default function Index() {
           <SignMessage />
           <SignStructuredMessage />
           <Transactions />
+          <StellaTokens />
+          <FakerTx />
+          <FailingBNSFunction />
+          <ContractDeploy />
+          <Gaia />
         </>
       )}
     </div>
